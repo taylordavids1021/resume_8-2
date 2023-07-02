@@ -129,9 +129,11 @@ button:hover {
 #footer {
     background-color: rgb(31, 31, 31);
     color: white;
-
     padding: 2rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
 }
 
 #footer > div {
@@ -158,3 +160,19 @@ button:hover {
 .col-span-5 {
     grid-column: 3 / span 4;
 }
+
+.address {
+    grid-column: 2 / span 2;
+}
+.email {
+    grid-column: 4 / span 4;
+}
+.phone {
+    grid-column: 2 / span 2;
+}
+.social {
+    grid-column: 4 / span 4;
+}
+.icon {
+    grid-column: 3 / span 3;
+} 
